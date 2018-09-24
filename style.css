@@ -323,154 +323,102 @@ nav ul div img {
     color: #04E1AF;
 }
 
-/* GALLERY2 */
+/* GALERIA KOTY */
 .gallery2 {
-    max-width: 1920px;
-    margin: 0 auto;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 110vh;
+    max-width: 1920px;
+    /* padding: 50px; */
+    margin: 0 auto;
     background-color: black;
 }
 
-.gallery2 .description {
+.description {
     padding: 50px 0;
     text-align: center;
-    background-color: #04E1AF;
-    font-family: 'Roboto Slab', serif;
+    background-color: rgb(4, 225, 175);
     font-size: 30px;
 }
 
-.gallery2 .description p {
-    padding: 20px 100px 0 100px;
+.description p {
+    padding: 10px 100px 0 100px;
     font-size: 25px;
-    font-family: 'Roboto Condensed', sans-serif;
 }
 
-.gallery2 .cats {
-    flex-grow: 1;
+
+.cats {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    background-color: black;
+    justify-content: center;
+    max-width: 1920px;
+    margin: 50px auto 0;
+    padding: 50px 0;
+    background-color: rgb(4, 225, 175);
 }
 
-.gallery2 .cats div {
-    flex-basis: 23%;
-    text-align: center;
-    cursor: pointer;
+.cats div {
     position: relative;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 10px;
     overflow: hidden;
 }
 
-/* Tlo pojawiajace sie po najechaniu na img */
-.gallery2 .cats div h3 {
+.cats div img {
+    width: 100%;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    cursor: pointer;
+}
+
+/* Tlo z tekstem */
+.cats div h3 {
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    padding: 10px;
+    padding: 5px;
     position: absolute;
-    color: rgba(4, 225, 175);
+    color: rgb(4, 225, 175);
     text-align: center;
-    font-family: 'Merienda', cursive;
     font-size: 30px;
-    /* line-height: 110%; */
-    background-color: rgba(12, 12, 12, 0.6);
+    background-color: rgba(12, 12, 12, 0.7);
     border-radius: 20px;
     opacity: 0;
+    cursor: pointer;
     transform: translateY(-100%);
-    transition: .3s;
+    transition: .2s;
 }
 
-.gallery2 .cats div:nth-child(5) h3 {
-    transform: translateY(100%);
-}
-
-.gallery2 .cats div:nth-child(6) h3 {
-    transform: translateY(100%);
-}
-
-.gallery2 .cats div:nth-child(7) h3 {
-    transform: translateY(100%);
-}
-
-.gallery2 .cats div:nth-child(8) h3 {
-    transform: translateY(100%);
-}
-
-.gallery2 .cats div:hover h3 {
+.cats div:hover h3 {
     opacity: 1;
     transform: translateY(0);
 }
 
-.gallery2 .cats div img {
-    width: 100%;
-    border-radius: 20px;
-}
-
-/* Gallery2 button */
 .gallery2 a {
-    padding: 10px 0;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    background-color: #04E1AF;
-    color: black;
-    border-style: none;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-family: 'Merienda', cursive;
-    cursor: pointer;
-    width: 200px;
     transition: .2s;
+    border-style: none;
+    display: block;
+    width: 200px;
+    padding: 10px 0;
+    margin: 50px auto;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: rgb(4, 225, 175);
+    color: black;
 }
 
 .gallery2 a:hover {
-    box-shadow: 0 0 0 2px rgb(12, 12, 12), 0 0 0 4px rgb(4, 225, 175);
+    box-shadow: 0 0 0 2px rgb(4, 225, 175);
     background-color: black;
     color: #04E1AF;
-}
-
-@media(max-width: 1720px) {
-    .gallery2 .cats div h3 {
-        font-size: 25px;
-    }
-}
-
-@media(max-width: 1440px) {
-    .gallery2 .cats {
-        align-content: space-around;
-    }
-
-    .gallery2 .cats div h3 {
-        font-size: 21px;
-    }
-}
-
-@media(max-width: 1280px) {
-
-    .gallery2 {
-        height: 180vh;
-    }
-
-    .gallery2 .cats div {
-        flex-basis: 40%;
-    }
-
-
-    .gallery2 .cats div img {
-        width: 80%;
-    }
-
-    .gallery2 .cats div h3 {
-        width: 80%;
-        left: 10%;
-        font-size: 27px;
-    }
 }
 
 /* FOOTER */
