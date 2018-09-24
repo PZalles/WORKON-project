@@ -173,7 +173,7 @@ nav ul div img {
 }
 
 .banner .info a:hover {
-    box-shadow: 0 0 0 2px black, 0 0 0 4px rgb(4, 225, 175);
+    box-shadow: 0 0 0 4px black;
     background-color: #04E1AF;
     color: black;
 }
