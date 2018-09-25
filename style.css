@@ -57,14 +57,19 @@ nav ul div {
     position: relative;
     width: 200px;
     height: 10vh;
+    border-top: 4px solid transparent;
+    transition: .3s;
+}
+
+nav ul div:hover {
+    border-top: 4px solid black;
 }
 
 nav ul div img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    ;
+    transform: translate(-50%, calc(-50% - 2px));
     width: 70px;
     height: 70px;
 }
@@ -265,7 +270,7 @@ nav ul div img {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    margin: 10px;
+    margin: 20px;
     overflow: hidden;
 }
 
@@ -363,7 +368,7 @@ nav ul div img {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    margin: 10px;
+    margin: 20px;
     overflow: hidden;
 }
 
@@ -469,6 +474,7 @@ footer a:nth-of-type(2) {
     transform: translateY(-50%);
     right: 260px;
     border-radius: 50%;
+
 }
 
 footer a:nth-of-type(2) i {
@@ -480,12 +486,24 @@ footer a:nth-of-type(2) i {
     line-height: 50px;
     border-radius: 50%;
     transition: .2s;
+    animation: rotate 6s linear infinite;
 }
 
 footer a:nth-of-type(2):hover i {
     background-color: white;
     color: #4267B2;
     font-size: 34px;
+    animation-play-state: paused;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(1080deg);
+    }
 }
 
 /* Footer instagram */
@@ -506,12 +524,14 @@ footer a:nth-of-type(3) i {
     line-height: 50px;
     border-radius: 50%;
     transition: .2s;
+    animation: rotate 6s linear infinite;
 }
 
 footer a:nth-of-type(3):hover i {
     background-image: linear-gradient(45deg, blue, red, yellow);
     font-size: 34px;
     font-weight: bold;
+    animation-play-state: paused;
 }
 
 /* Footer twitter */
@@ -532,12 +552,14 @@ footer a:nth-of-type(4) i {
     line-height: 50px;
     border-radius: 50%;
     transition: .2s;
+    animation: rotate 6s linear infinite;
 }
 
 footer a:nth-of-type(4):hover i {
     background-color: white;
     color: #28AAE1;
     font-size: 34px;
+    animation-play-state: paused;
 }
 
 /* Footer github */
@@ -558,10 +580,12 @@ footer a:nth-of-type(5) i {
     line-height: 50px;
     border-radius: 50%;
     transition: .2s;
+    animation: rotate 6s linear infinite;
 }
 
 footer a:nth-of-type(5):hover i {
     background-color: white;
     color: #323131;
     font-size: 34px;
+    animation-play-state: paused;
 }
