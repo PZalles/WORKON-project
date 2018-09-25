@@ -34,6 +34,7 @@ nav.scrolled {
 }
 
 nav ul {
+    position: relative;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -41,8 +42,27 @@ nav ul {
 }
 
 nav ul li {
+    position: relative;
     flex-basis: 16%;
     text-align: center;
+    cursor: pointer;
+}
+
+nav ul li::before {
+    content: '';
+    display: block;
+    height: 6px;
+    background-color: black;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out .3s;
+}
+
+nav ul li:hover::before {
+    transform: scale(1, 1);
 }
 
 nav ul li a {
@@ -52,36 +72,14 @@ nav ul li a {
     text-transform: uppercase;
     font-size: 25px;
     font-family: arial;
-    /* height: 150px; */
-    line-height: 72px;
-    cursor: pointer;
-    transition: .3s;
-    border-top: 4px solid transparent;
+    line-height: 80px;
 }
 
-nav ul li:hover a {
-    border-top: 4px solid black;
-    /* background-color: black;
-    color: #04E1AF; */
-}
-
-nav ul div {
-    position: relative;
-    width: 200px;
-    height: 80px;
-    border-top: 4px solid transparent;
-    transition: .3s;
-}
-
-nav ul div:hover {
-    border-top: 4px solid black;
-}
-
-nav ul div img {
+nav ul li img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, calc(-50% - 2px));
+    transform: translate(-45%, -50%);
     width: 70px;
     height: 70px;
 }
