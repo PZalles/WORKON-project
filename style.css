@@ -49,6 +49,7 @@ nav ul li {
     text-align: center;
     cursor: pointer;
     line-height: 160px;
+    font-size: 35px;
 }
 
 nav ul li::before {
@@ -70,12 +71,10 @@ nav ul li:hover::before {
 
 nav ul li a {
     display: block;
-    color: black;
-    text-decoration: none;
+    color: black !important;
+    text-decoration: none !important;
     text-transform: uppercase;
-    font-size: 35px;
     font-family: arial;
-
     transition: .2s linear;
 }
 
@@ -401,10 +400,15 @@ nav ul li img.changeSize {
     color: #04E1AF;
 }
 
+.card-deck {
+    width: 90%;
+    margin: 0 auto;
+}
+
 /* FOOTER */
 footer {
     max-width: 1920px;
-    margin: 0 auto;
+    margin: 0 auto !important;
     position: relative;
     height: 8vh;
     background-color: #eee;
@@ -416,6 +420,7 @@ footer p {
     font-size: 20px;
     color: black;
     line-height: 8vh;
+    margin: 0;
 }
 
 /* Footer o nas */
