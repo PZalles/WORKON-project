@@ -115,7 +115,7 @@ nav ul li img.changeSize {
 /* Header banner info */
 .banner .info {
     text-align: center;
-    top: 50%;
+    top: 70%;
     transform: translateY(-50%);
     right: 10%;
     width: 500px;
@@ -141,8 +141,8 @@ nav ul li img.changeSize {
     padding: 10px 0;
     font-size: 20px;
     font-family: 'Merienda', cursive;
-    background-color: rgb(190, 190, 190);
-    border: 3px solid #e82c0c;
+    background-color: #e82c0c;
+    border: 3px solid transparent;
     color: black;
     text-decoration: none;
     text-transform: uppercase;
@@ -207,15 +207,15 @@ nav ul li img.changeSize {
 .gallery1 {
     position: relative;
     max-width: 1920px;
-    /* padding: 50px; */
-    margin: 0 auto;
-    background-color: white;
+    padding: 0 0 5px 0;
+    margin: 50px auto;
+    background-color: #eee;
 }
 
 .gallery1 .description {
-    padding: 50px 0;
+    padding: 40px 0;
     text-align: center;
-    background-color: white;
+    background-color: #eee;
     font-size: 50px;
 }
 
@@ -230,7 +230,7 @@ nav ul li img.changeSize {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1920px;
-    padding: 0 0 50px 0;
+    padding: 0 0 40px 0;
     background-color: #eee;
 }
 
@@ -261,18 +261,18 @@ nav ul li img.changeSize {
     height: 100%;
     top: 0;
     left: 0;
-    padding: 5px;
+    padding: 15px;
     position: absolute;
-    color: rgb(4, 225, 175);
+    color: black;
     text-align: center;
     font-size: 30px;
-    background-color: rgba(12, 12, 12, 0.7);
+    background-color: rgba(232, 44, 12, 0.7);
     border-radius: 10px;
     font-family: 'Amiko', sans-serif;
     opacity: 0;
     cursor: pointer;
     transform: translateY(-100%);
-    transition: .2s;
+    transition: .4s;
 }
 
 .dogs div:hover h3 {
@@ -286,7 +286,7 @@ nav ul li img.changeSize {
     display: block;
     width: 200px;
     padding: 10px 0;
-    margin: 10px auto 50px auto;
+    margin: 0 auto 40px auto;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
@@ -305,13 +305,13 @@ nav ul li img.changeSize {
 .gallery2 {
     position: relative;
     max-width: 1920px;
-    /* padding: 50px; */
-    margin: 0 auto;
+    padding: 0 0 5px 0;
+    margin: 50px auto;
     background-color: white;
 }
 
 .gallery2 .description {
-    padding: 50px 0;
+    padding: 40px 0;
     text-align: center;
     background-color: white;
     font-size: 50px;
@@ -328,9 +328,9 @@ nav ul li img.changeSize {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1920px;
-    padding: 0 0 50px 0;
+    padding: 0 0 40px 0;
     /* margin: 50px auto 0; */
-    background-color: #eee;
+    background-color: white;
 }
 
 .cats div {
@@ -385,7 +385,7 @@ nav ul li img.changeSize {
     display: block;
     width: 200px;
     padding: 10px 0;
-    margin: 10px auto 50px auto;
+    margin: 0 auto 40px auto;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
@@ -401,8 +401,14 @@ nav ul li img.changeSize {
 }
 
 .card-deck {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+    padding: 100px;
+    background-color: #eee;
+}
+
+.card-body {
+    text-align: center;
 }
 
 /* FOOTER */
@@ -410,7 +416,7 @@ footer {
     max-width: 1920px;
     margin: 0 auto !important;
     position: relative;
-    height: 8vh;
+    height: 10vh;
     background-color: rgb(190, 190, 190);
     text-align: center;
 }
@@ -418,7 +424,7 @@ footer {
 footer p {
     font-size: 20px;
     color: black;
-    line-height: 8vh;
+    line-height: 10vh;
     margin: 0;
 }
 
