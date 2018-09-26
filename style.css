@@ -85,6 +85,7 @@ nav ul li a {
     text-decoration: none !important;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     transition: .2s linear;
 }
 
@@ -131,12 +132,13 @@ nav ul li img.changeSize {
     height: 300px;
     padding: 30px;
     border-radius: 20px;
-    background-color: rgba(255, 56, 25, 0.3);
+    background-color: rgba(255, 56, 25, 0.4);
     z-index: 1;
 }
 
 .banner .info h2 {
     text-transform: uppercase;
+    font-weight: bold;
     font-size: 50px;
     line-height: 100%;
     font-family: 'Josefin Sans', sans-serif;
@@ -251,8 +253,8 @@ nav ul li img.changeSize {
 
 .dogs div {
     position: relative;
-    width: 450px;
-    height: 300px;
+    width: 400px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,8 +282,9 @@ nav ul li img.changeSize {
     position: absolute;
     color: black;
     text-align: center;
-    font-size: 35px;
-    background-color: rgba(190, 190, 190, 0.8);
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(190, 190, 190, 0.6);
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
     opacity: 0;
@@ -305,6 +308,7 @@ nav ul li img.changeSize {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     background-color: rgb(255, 56, 25);
     color: white;
@@ -354,8 +358,8 @@ nav ul li img.changeSize {
 
 .cats div {
     position: relative;
-    width: 450px;
-    height: 300px;
+    width: 400px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -383,9 +387,10 @@ nav ul li img.changeSize {
     position: absolute;
     color: black;
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Roboto', sans-serif;
-    background-color: rgba(190, 190, 190, 0.8);
+    font-weight: bold;
+    background-color: rgba(190, 190, 190, 0.6);
     border-radius: 10px;
     opacity: 0;
     cursor: default;
@@ -408,6 +413,7 @@ nav ul li img.changeSize {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     background-color: rgb(255, 56, 25);
     color: white;
@@ -419,6 +425,7 @@ nav ul li img.changeSize {
     color: black;
 }
 
+/* BOOTSTRAP */
 .card-deck {
     width: 100%;
     max-width: 1920px;
@@ -429,6 +436,33 @@ nav ul li img.changeSize {
 
 .card-body {
     text-align: center;
+}
+
+.card-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+}
+
+.card-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+a.btn {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    width: 200px;
+    background-color: rgb(255, 56, 25);
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+a.btn:hover {
+    box-shadow: -4px -4px 0 0 rgb(255, 56, 25);
+    background-color: rgb(190, 190, 190);
+    color: black;
 }
 
 /* FOOTER */
@@ -443,6 +477,7 @@ footer {
 
 footer p {
     font-size: 20px;
+    font-family: 'Roboto', sans-serif;
     color: black;
     line-height: 10vh;
     margin: 0;
@@ -455,21 +490,21 @@ footer a:nth-of-type(1) {
     transform: translateY(-50%);
     left: 50px;
     padding: 5px 20px;
-    background-color: rgb(255, 56, 25);
+    background-color: black;
     color: white;
     font-size: 20px;
-    font-family: 'Merienda', cursive;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 4px;
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 10px;
     cursor: pointer;
-    transition: .2s;
+    transition: .4s;
 }
 
 footer a:nth-of-type(1):hover {
-    background-color: black;
-    box-shadow: 0 0 0 3px rgb(255, 56, 25);
+    background-image: linear-gradient(60deg, blue, red, lightblue, white, lightblue, red, blue);
+    color: black;
 }
 
 /* Footer fb */

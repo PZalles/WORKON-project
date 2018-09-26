@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: white;
+}
+
+/* HEADER nav */
+header {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+nav {
+    max-width: 1920px;
+    background-color: rgb(190, 190, 190);
+    width: 100%;
+    height: 10vh;
+    /* z-index: 2; */
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav ul li {
+    position: relative;
+    flex-basis: 16%;
+    text-align: center;
+    cursor: pointer;
+    line-height: 10vh;
+    font-size: 25px;
+}
+
+nav ul li:nth-child(3) {
+    cursor: default;
+}
+
+nav ul li:nth-child(3)::before {
+    display: none;
+}
+
+nav ul li::before {
+    content: '';
+    display: block;
+    height: 6px;
+    background-color: rgb(255, 56, 25);
+    position: absolute;
+    top: calc(10vh - 6px);
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out .3s;
+}
+
+nav ul li:hover::before {
+    transform: scale(1, 1);
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    transition: .2s linear;
+}
+
+nav ul li img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+    width: 80px;
+    height: 80px;
+}
+
+/*Article*/
+
+section.article {
+    text-align: center;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.first h2 {
+    font-size: 40px;
+    margin-top: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.second h2 {
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.article p {
+    text-align: justify;
+    margin: 40px 114px;
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* FOOTER */
+footer {
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    height: 8vh;
+    background-color: rgb(190, 190, 190);
+    text-align: center;
+}
+
+footer p {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    line-height: 8vh;
+}
+
+/* Footer wroc */
+footer a:nth-of-type(1) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+    padding: 5px 20px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+footer a:nth-of-type(1):hover {
+    background-image: linear-gradient(60deg, blue, red, lightblue, white, lightblue, red, blue);
+    color: black;
+}
+
+/* Footer fb */
+footer a:nth-of-type(2) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 260px;
+    border-radius: 50%;
+
+}
+
+footer a:nth-of-type(2) i {
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    background-color: #4267B2;
+    color: white;
+    line-height: 45px;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+footer a:nth-of-type(2):hover i {
+    background-color: white;
+    color: #4267B2;
+    font-size: 30px;
+}
+
+/* Footer instagram */
+footer a:nth-of-type(3) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 190px;
+    border-radius: 50%;
+}
+
+footer a:nth-of-type(3) i {
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    background-image: linear-gradient(45deg, yellow, red, blue);
+    color: white;
+    line-height: 45px;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+footer a:nth-of-type(3):hover i {
+    background-image: linear-gradient(45deg, blue, red, yellow);
+    font-size: 30px;
+}
+
+/* Footer twitter */
+footer a:nth-of-type(4) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 120px;
+    border-radius: 50%;
+}
+
+footer a:nth-of-type(4) i {
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    background-color: #28AAE1;
+    color: white;
+    line-height: 45px;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+footer a:nth-of-type(4):hover i {
+    background-color: white;
+    color: #28AAE1;
+    font-size: 30px;
+}
+
+/* Footer github */
+footer a:nth-of-type(5) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+    border-radius: 50%;
+}
+
+footer a:nth-of-type(5) i {
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    background-color: #323131;
+    color: white;
+    line-height: 45px;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+footer a:nth-of-type(5):hover i {
+    background-color: white;
+    color: #323131;
+    font-size: 30px;
+}

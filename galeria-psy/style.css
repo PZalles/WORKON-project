@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: black;
+    /* background-color: black; */
     font-family: arial;
 }
 
@@ -14,32 +14,33 @@ body {
 .gallery1 {
     position: relative;
     max-width: 1920px;
-    /* padding: 50px; */
     margin: 0 auto;
-    background-color: black;
 }
 
 .description {
-    padding: 50px 0;
+    padding: 40px 0;
     text-align: center;
-    background-color: rgb(4, 225, 175);
-    font-size: 30px;
+    background-color: #eee;
+}
+
+.gallery1 .description h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
 }
 
 .description p {
-    padding: 10px 100px 0 100px;
+    padding: 20px 120px 0 120px;
     font-size: 25px;
+    font-family: 'Roboto', sans-serif;
 }
-
 
 .dogs {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1920px;
-    margin: 50px auto 0;
-    padding: 50px 0;
-    background-color: rgb(4, 225, 175);
+    padding: 0 0 20px 0;
+    background-color: white;
 }
 
 .dogs div {
@@ -49,7 +50,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 20px;
     overflow: hidden;
 }
@@ -69,17 +70,19 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    padding: 5px;
+    padding: 15px;
     position: absolute;
-    color: rgb(4, 225, 175);
+    color: black;
     text-align: center;
+    font-weight: bold;
     font-size: 30px;
-    background-color: rgba(12, 12, 12, 0.7);
-    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(190, 190, 190, 0.6);
+    border-radius: 10px;
     opacity: 0;
     cursor: pointer;
     transform: translateY(-100%);
-    transition: .2s;
+    transition: .4s;
 }
 
 .dogs div:hover h3 {
@@ -87,65 +90,46 @@ body {
     transform: translateY(0);
 }
 
-.gallery1 a {
-    transition: .2s;
-    border-style: none;
-    display: block;
-    width: 200px;
-    padding: 10px 0;
-    margin: 50px auto;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 20px;
-    background-color: rgb(4, 225, 175);
-    color: black;
-}
-
-.gallery1 a:hover {
-    box-shadow: 0 0 0 2px rgb(4, 225, 175);
-    background-color: black;
-    color: #04E1AF;
-}
-
 /* FOOTER */
 footer {
     max-width: 1920px;
-    margin: 0 auto;
+    margin: 0 auto !important;
     position: relative;
-    height: 8vh;
-    background-color: rgb(4, 225, 175);
-    color: white;
+    height: 10vh;
+    background-color: rgb(190, 190, 190);
     text-align: center;
 }
 
 footer p {
     font-size: 20px;
+    font-family: 'Roboto', sans-serif;
     color: black;
-    line-height: 8vh;
+    line-height: 10vh;
+    margin: 0;
 }
 
-/* Footer o nas */
+/* Footer wroc */
 footer a:nth-of-type(1) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 50px;
     padding: 5px 20px;
-    color: black;
+    background-color: black;
+    color: white;
     font-size: 20px;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 4px;
     text-decoration: none;
     text-transform: uppercase;
-    border: 2px solid black;
     border-radius: 10px;
     cursor: pointer;
-    transition: .2s;
+    transition: .4s;
 }
 
 footer a:nth-of-type(1):hover {
-    background-color: black;
-    color: #04E1AF;
+    background-image: linear-gradient(60deg, blue, red, lightblue, white, lightblue, red, blue);
+    color: black;
 }
 
 /* Footer fb */
@@ -158,12 +142,12 @@ footer a:nth-of-type(2) {
 }
 
 footer a:nth-of-type(2) i {
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
     background-color: #4267B2;
     color: white;
-    line-height: 50px;
+    line-height: 45px;
     border-radius: 50%;
     transition: .2s;
 }
@@ -171,7 +155,7 @@ footer a:nth-of-type(2) i {
 footer a:nth-of-type(2):hover i {
     background-color: white;
     color: #4267B2;
-    font-size: 34px;
+    font-size: 30px;
 }
 
 /* Footer instagram */
@@ -184,20 +168,19 @@ footer a:nth-of-type(3) {
 }
 
 footer a:nth-of-type(3) i {
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
     background-image: linear-gradient(45deg, yellow, red, blue);
     color: white;
-    line-height: 50px;
+    line-height: 45px;
     border-radius: 50%;
     transition: .2s;
 }
 
 footer a:nth-of-type(3):hover i {
     background-image: linear-gradient(45deg, blue, red, yellow);
-    font-size: 34px;
-    font-weight: bold;
+    font-size: 30px;
 }
 
 /* Footer twitter */
@@ -210,12 +193,12 @@ footer a:nth-of-type(4) {
 }
 
 footer a:nth-of-type(4) i {
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
     background-color: #28AAE1;
     color: white;
-    line-height: 50px;
+    line-height: 45px;
     border-radius: 50%;
     transition: .2s;
 }
@@ -223,7 +206,7 @@ footer a:nth-of-type(4) i {
 footer a:nth-of-type(4):hover i {
     background-color: white;
     color: #28AAE1;
-    font-size: 34px;
+    font-size: 30px;
 }
 
 /* Footer github */
@@ -236,12 +219,12 @@ footer a:nth-of-type(5) {
 }
 
 footer a:nth-of-type(5) i {
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
     background-color: #323131;
     color: white;
-    line-height: 50px;
+    line-height: 45px;
     border-radius: 50%;
     transition: .2s;
 }
@@ -249,5 +232,5 @@ footer a:nth-of-type(5) i {
 footer a:nth-of-type(5):hover i {
     background-color: white;
     color: #323131;
-    font-size: 34px;
+    font-size: 30px;
 }
