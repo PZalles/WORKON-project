@@ -18,7 +18,7 @@ header {
 
 nav {
     max-width: 1920px;
-    background-color: rgb(190, 190, 190, 0.8);
+    background-color: rgba(190, 190, 190, 0.9);
     position: fixed;
     top: 0;
     left: 50%;
@@ -31,7 +31,7 @@ nav {
 /* Przezroczysty nav */
 nav.scrolled {
     height: 80px;
-    background-color: rgba(190, 190, 190, 0.8);
+    background-color: rgba(190, 190, 190, 0.6);
     transition: .2s linear;
 }
 
@@ -55,8 +55,8 @@ nav ul li {
 nav ul li::before {
     content: '';
     display: block;
-    height: 3px;
-    background-color: black;
+    height: 4px;
+    background-color: #e82c0c;
     position: absolute;
     top: 0;
     left: 0;
@@ -104,7 +104,7 @@ nav ul li img.changeSize {
     margin: 0 auto;
     height: 100vh;
     max-width: 1920px;
-    background-color: #04E1AF;
+    /* background-color: rgba(190, 190, 190, 0.7); */
     overflow: hidden;
 }
 
@@ -121,7 +121,7 @@ nav ul li img.changeSize {
     width: 500px;
     height: 300px;
     padding: 30px;
-    background-color: rgba(238, 238, 238, 0.6);
+    background-color: rgba(190, 190, 190, 0.5);
     z-index: 1;
 }
 
@@ -141,8 +141,9 @@ nav ul li img.changeSize {
     padding: 10px 0;
     font-size: 20px;
     font-family: 'Merienda', cursive;
-    background-color: black;
-    color: #04E1AF;
+    background-color: rgb(190, 190, 190);
+    border: 3px solid #e82c0c;
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 10px;
@@ -151,9 +152,8 @@ nav ul li img.changeSize {
 }
 
 .banner .info a:hover {
-    box-shadow: 0 0 0 4px black;
-    background-color: #04E1AF;
-    color: black;
+    background-color: #e82c0c;
+    color: rgb(190, 190, 190);
 }
 
 /* Header banner img */
