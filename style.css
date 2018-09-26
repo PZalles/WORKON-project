@@ -48,6 +48,7 @@ nav ul li {
     flex-basis: 16%;
     text-align: center;
     cursor: pointer;
+    line-height: 160px;
 }
 
 nav ul li::before {
@@ -74,11 +75,11 @@ nav ul li a {
     text-transform: uppercase;
     font-size: 35px;
     font-family: arial;
-    line-height: 160px;
+
     transition: .2s linear;
 }
 
-nav ul li a.lineHeight {
+nav ul li.lineHeight {
     line-height: 80px;
     font-size: 25px;
 }

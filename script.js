@@ -9,9 +9,9 @@ $(function () {
     $(document).scroll(function () {
         var $nav = $("nav");
         var $img = $("nav ul li img");
-        // var $height = $("nav ul li a");
+        var $height = $("nav ul li");
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
         $img.toggleClass('changeSize', $(this).scrollTop() > $nav.height());
-        // $height.toggleClass('lineHeight', $(this).scrollTop() > $nav.height());
+        $height.toggleClass('lineHeight', $(this).scrollTop() > $nav.height());
     });
 })
