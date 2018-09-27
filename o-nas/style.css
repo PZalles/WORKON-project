@@ -19,7 +19,7 @@ nav {
     max-width: 1920px;
     background-color: rgb(190, 190, 190);
     width: 100%;
-    height: 10vh;
+    height: 12vh;
     /* z-index: 2; */
 }
 
@@ -36,7 +36,7 @@ nav ul li {
     flex-basis: 16%;
     text-align: center;
     cursor: pointer;
-    line-height: 10vh;
+    line-height: 12vh;
     font-size: 25px;
 }
 
@@ -118,7 +118,7 @@ footer {
     max-width: 1920px;
     margin: 0 auto;
     position: relative;
-    height: 8vh;
+    height: 10vh;
     background-color: rgb(190, 190, 190);
     text-align: center;
 }
@@ -127,7 +127,7 @@ footer p {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     color: black;
-    line-height: 8vh;
+    line-height: 10vh;
 }
 
 /* Footer wroc */
