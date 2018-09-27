@@ -68,7 +68,7 @@ nav ul li::before {
     height: 6px;
     background-color: rgb(255, 56, 25);
     position: absolute;
-    top: 0;
+    top: 54px;
     left: 0;
     right: 0;
     transform: scale(0, 1);
@@ -265,11 +265,6 @@ nav ul li img.changeSize {
 
 .dogs div img {
     width: 100%;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-    /* cursor: pointer; */
 }
 
 /* Tlo z tekstem */
@@ -370,11 +365,6 @@ nav ul li img.changeSize {
 
 .cats div img {
     width: 100%;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-    /* cursor: pointer; */
 }
 
 /* Tlo z tekstem */
@@ -483,7 +473,7 @@ footer p {
     margin: 0;
 }
 
-/* Footer o nas */
+/* Footer nasz team */
 footer a:nth-of-type(1) {
     position: absolute;
     top: 50%;
