@@ -108,6 +108,7 @@ nav ul li img.changeSize {
 .page p {
     margin: 360px 50px 200px 50px;
     text-align: justify;
+    font-size: 20px;
 }
 
 /* FOOTER */
@@ -128,32 +129,8 @@ footer p {
     margin: 0;
 }
 
-/* Footer nasz team */
-footer a:nth-of-type(1) {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 50px;
-    padding: 5px 20px;
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 4px;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .4s;
-}
-
-footer a:nth-of-type(1):hover {
-    background-image: linear-gradient(60deg, blue, red, lightblue, white, lightblue, red, blue);
-    color: black;
-}
-
 /* Footer fb */
-footer a:nth-of-type(2) {
+footer a:nth-of-type(1) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -162,7 +139,7 @@ footer a:nth-of-type(2) {
 
 }
 
-footer a:nth-of-type(2) i {
+footer a:nth-of-type(1) i {
     font-size: 25px;
     width: 45px;
     height: 45px;
@@ -173,14 +150,14 @@ footer a:nth-of-type(2) i {
     transition: .2s;
 }
 
-footer a:nth-of-type(2):hover i {
+footer a:nth-of-type(1):hover i {
     background-color: white;
     color: #4267B2;
     font-size: 30px;
 }
 
 /* Footer instagram */
-footer a:nth-of-type(3) {
+footer a:nth-of-type(2) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -188,7 +165,7 @@ footer a:nth-of-type(3) {
     border-radius: 50%;
 }
 
-footer a:nth-of-type(3) i {
+footer a:nth-of-type(2) i {
     font-size: 25px;
     width: 45px;
     height: 45px;
@@ -199,13 +176,13 @@ footer a:nth-of-type(3) i {
     transition: .2s;
 }
 
-footer a:nth-of-type(3):hover i {
+footer a:nth-of-type(2):hover i {
     background-image: linear-gradient(45deg, blue, red, yellow);
     font-size: 30px;
 }
 
 /* Footer twitter */
-footer a:nth-of-type(4) {
+footer a:nth-of-type(3) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -213,7 +190,7 @@ footer a:nth-of-type(4) {
     border-radius: 50%;
 }
 
-footer a:nth-of-type(4) i {
+footer a:nth-of-type(3) i {
     font-size: 25px;
     width: 45px;
     height: 45px;
@@ -224,14 +201,14 @@ footer a:nth-of-type(4) i {
     transition: .2s;
 }
 
-footer a:nth-of-type(4):hover i {
+footer a:nth-of-type(3):hover i {
     background-color: white;
     color: #28AAE1;
     font-size: 30px;
 }
 
 /* Footer github */
-footer a:nth-of-type(5) {
+footer a:nth-of-type(4) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -239,7 +216,7 @@ footer a:nth-of-type(5) {
     border-radius: 50%;
 }
 
-footer a:nth-of-type(5) i {
+footer a:nth-of-type(4) i {
     font-size: 25px;
     width: 45px;
     height: 45px;
@@ -250,7 +227,7 @@ footer a:nth-of-type(5) i {
     transition: .2s;
 }
 
-footer a:nth-of-type(5):hover i {
+footer a:nth-of-type(4):hover i {
     background-color: white;
     color: #323131;
     font-size: 30px;
