@@ -8,6 +8,10 @@ font-family: 'Josefin Sans', sans-serif; */
     outline: none;
 }
 
+:root {
+    --buttonColor: #ff3819;
+}
+
 body {
     background-color: white;
 }
@@ -66,7 +70,7 @@ nav ul li::before {
     content: '';
     display: block;
     height: 6px;
-    background-color: rgb(255, 56, 25);
+    background-color: #ff3819;
     position: absolute;
     top: 54px;
     left: 0;
@@ -153,7 +157,7 @@ nav ul li img.changeSize {
     padding: 10px 0;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(255, 56, 25);
+    background-color: var(--buttonColor);
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -164,8 +168,8 @@ nav ul li img.changeSize {
 
 .banner .info a:hover {
     background-color: rgb(190, 190, 190);
-    box-shadow: -3px -3px 0 0 rgb(255, 56, 25);
-    color: black;
+    box-shadow: 0 0 0 2px #ff3819;
+    color: #ff3819;
 }
 
 /* Header banner img */
@@ -293,28 +297,6 @@ nav ul li img.changeSize {
     transform: translateY(0);
 }
 
-.gallery1 a {
-    transition: .2s;
-    border-style: none;
-    display: block;
-    width: 200px;
-    padding: 10px 0;
-    margin: 0 auto 40px auto;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    background-color: rgb(255, 56, 25);
-    color: white;
-}
-
-.gallery1 a:hover {
-    box-shadow: -4px -4px 0 0 rgb(255, 56, 25);
-    background-color: rgb(190, 190, 190);
-    color: black;
-}
-
 /* GALERIA KOTY */
 .gallery2 {
     position: relative;
@@ -393,28 +375,6 @@ nav ul li img.changeSize {
     transform: translateY(0);
 }
 
-.gallery2 a {
-    transition: .2s;
-    border-style: none;
-    display: block;
-    width: 200px;
-    padding: 10px 0;
-    margin: 0 auto 40px auto;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    background-color: rgb(255, 56, 25);
-    color: white;
-}
-
-.gallery2 a:hover {
-    box-shadow: 4px -4px 0 0 rgb(255, 56, 25);
-    background-color: rgb(190, 190, 190);
-    color: black;
-}
-
 /* BOOTSTRAP */
 .card-deck {
     width: 100%;
@@ -442,7 +402,7 @@ a.btn {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     width: 200px;
-    background-color: rgb(255, 56, 25);
+    background-color: var(--buttonColor);
     border: none;
     border-radius: 0;
     text-transform: uppercase;
@@ -450,9 +410,9 @@ a.btn {
 }
 
 a.btn:hover {
-    box-shadow: -4px -4px 0 0 rgb(255, 56, 25);
+    box-shadow: 0 0 0 2px #ff3819;
     background-color: rgb(190, 190, 190);
-    color: black;
+    color: #ff3819;
 }
 
 /* FOOTER */
@@ -473,32 +433,8 @@ footer p {
     margin: 0;
 }
 
-/* Footer nasz team */
-footer a:nth-of-type(1) {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 50px;
-    padding: 5px 20px;
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 4px;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .4s;
-}
-
-footer a:nth-of-type(1):hover {
-    background-image: linear-gradient(60deg, blue, red, lightblue, white, lightblue, red, blue);
-    color: black;
-}
-
 /* Footer fb */
-footer a:nth-of-type(2) {
+footer a:nth-of-type(1) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -507,7 +443,7 @@ footer a:nth-of-type(2) {
 
 }
 
-footer a:nth-of-type(2) i {
+footer a:nth-of-type(1) i {
     font-size: 25px;
     width: 45px;
     height: 45px;
@@ -518,14 +454,14 @@ footer a:nth-of-type(2) i {
     transition: .2s;
 }
 
-footer a:nth-of-type(2):hover i {
+footer a:nth-of-type(1):hover i {
     background-color: white;
     color: #4267B2;
     font-size: 30px;
 }
 
 /* Footer instagram */
-footer a:nth-of-type(3) {
+footer a:nth-of-type(2) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -533,7 +469,7 @@ footer a:nth-of-type(3) {
     border-radius: 50%;
 }
 
-footer a:nth-of-type(3) i {
+footer a:nth-of-type(2) i {
     font-size: 25px;
     width: 45px;
     height: 45px;
@@ -544,13 +480,13 @@ footer a:nth-of-type(3) i {
     transition: .2s;
 }
 
-footer a:nth-of-type(3):hover i {
+footer a:nth-of-type(2):hover i {
     background-image: linear-gradient(45deg, blue, red, yellow);
     font-size: 30px;
 }
 
 /* Footer twitter */
-footer a:nth-of-type(4) {
+footer a:nth-of-type(3) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -558,7 +494,7 @@ footer a:nth-of-type(4) {
     border-radius: 50%;
 }
 
-footer a:nth-of-type(4) i {
+footer a:nth-of-type(3) i {
     font-size: 25px;
     width: 45px;
     height: 45px;
@@ -569,14 +505,14 @@ footer a:nth-of-type(4) i {
     transition: .2s;
 }
 
-footer a:nth-of-type(4):hover i {
+footer a:nth-of-type(3):hover i {
     background-color: white;
     color: #28AAE1;
     font-size: 30px;
 }
 
 /* Footer github */
-footer a:nth-of-type(5) {
+footer a:nth-of-type(4) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -584,7 +520,7 @@ footer a:nth-of-type(5) {
     border-radius: 50%;
 }
 
-footer a:nth-of-type(5) i {
+footer a:nth-of-type(4) i {
     font-size: 25px;
     width: 45px;
     height: 45px;
@@ -595,7 +531,7 @@ footer a:nth-of-type(5) i {
     transition: .2s;
 }
 
-footer a:nth-of-type(5):hover i {
+footer a:nth-of-type(4):hover i {
     background-color: white;
     color: #323131;
     font-size: 30px;
