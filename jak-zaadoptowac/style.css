@@ -10,18 +10,25 @@ body {
     background-color: white;
 }
 
-/* HEADER nav */
-header {
-    max-width: 1920px;
-    margin: 0 auto;
-}
-
+/* NAV */
 nav {
     max-width: 1920px;
-    background-color: rgb(190, 190, 190);
+    margin: 0 auto;
+    background-color: rgba(190, 190, 190, 0.9);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
-    height: 12vh;
-    /* z-index: 2; */
+    height: 160px;
+    z-index: 2;
+}
+
+/* Przezroczysty nav */
+nav.scrolled {
+    height: 80px;
+    background-color: rgba(190, 190, 190, 0.7);
+    transition: .2s linear;
 }
 
 nav ul {
@@ -37,8 +44,8 @@ nav ul li {
     flex-basis: 16%;
     text-align: center;
     cursor: pointer;
-    line-height: 12vh;
-    font-size: 25px;
+    line-height: 160px;
+    font-size: 35px;
 }
 
 nav ul li:nth-child(3) {
@@ -55,7 +62,7 @@ nav ul li::before {
     height: 6px;
     background-color: rgb(255, 56, 25);
     position: absolute;
-    top: calc(10vh - 6px);
+    top: 54px;
     left: 0;
     right: 0;
     transform: scale(0, 1);
@@ -68,12 +75,17 @@ nav ul li:hover::before {
 
 nav ul li a {
     display: block;
-    color: black;
-    text-decoration: none;
+    color: black !important;
+    text-decoration: none !important;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     transition: .2s linear;
+}
+
+nav ul li.lineHeight {
+    line-height: 80px;
+    font-size: 25px;
 }
 
 nav ul li img {
@@ -81,6 +93,12 @@ nav ul li img {
     top: 50%;
     left: 50%;
     transform: translate(-45%, -50%);
+    width: 160px;
+    height: 160px;
+    transition: .2s linear;
+}
+
+nav ul li img.changeSize {
     width: 80px;
     height: 80px;
 }
@@ -91,6 +109,7 @@ section.article {
     text-align: center;
     max-width: 1920px;
     margin: 0 auto;
+    margin-top: 200px;
 }
 
 h2 {
@@ -123,32 +142,8 @@ footer p {
     line-height: 10vh;
 }
 
-/* Footer wroc */
-footer a:nth-of-type(1) {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 50px;
-    padding: 5px 20px;
-    background-color: rgb(255, 56, 25);
-    color: white;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 4px;
-    text-decoration: none;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: .2s;
-}
-
-footer a:nth-of-type(1):hover {
-    box-shadow: -4px -4px 0 0 rgb(255, 56, 25);
-    background-color: black;
-    color: white;
-}
-
 /* Footer fb */
-footer a:nth-of-type(2) {
+footer a:nth-of-type(1) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -157,7 +152,7 @@ footer a:nth-of-type(2) {
 
 }
 
-footer a:nth-of-type(2) i {
+footer a:nth-of-type(1) i {
     font-size: 25px;
     width: 45px;
     height: 45px;
@@ -168,14 +163,14 @@ footer a:nth-of-type(2) i {
     transition: .2s;
 }
 
-footer a:nth-of-type(2):hover i {
+footer a:nth-of-type(1):hover i {
     background-color: white;
     color: #4267B2;
     font-size: 30px;
 }
 
 /* Footer instagram */
-footer a:nth-of-type(3) {
+footer a:nth-of-type(2) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -183,7 +178,7 @@ footer a:nth-of-type(3) {
     border-radius: 50%;
 }
 
-footer a:nth-of-type(3) i {
+footer a:nth-of-type(2) i {
     font-size: 25px;
     width: 45px;
     height: 45px;
@@ -194,13 +189,13 @@ footer a:nth-of-type(3) i {
     transition: .2s;
 }
 
-footer a:nth-of-type(3):hover i {
+footer a:nth-of-type(2):hover i {
     background-image: linear-gradient(45deg, blue, red, yellow);
     font-size: 30px;
 }
 
 /* Footer twitter */
-footer a:nth-of-type(4) {
+footer a:nth-of-type(3) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -208,7 +203,7 @@ footer a:nth-of-type(4) {
     border-radius: 50%;
 }
 
-footer a:nth-of-type(4) i {
+footer a:nth-of-type(3) i {
     font-size: 25px;
     width: 45px;
     height: 45px;
@@ -219,14 +214,14 @@ footer a:nth-of-type(4) i {
     transition: .2s;
 }
 
-footer a:nth-of-type(4):hover i {
+footer a:nth-of-type(3):hover i {
     background-color: white;
     color: #28AAE1;
     font-size: 30px;
 }
 
 /* Footer github */
-footer a:nth-of-type(5) {
+footer a:nth-of-type(4) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -234,7 +229,7 @@ footer a:nth-of-type(5) {
     border-radius: 50%;
 }
 
-footer a:nth-of-type(5) i {
+footer a:nth-of-type(4) i {
     font-size: 25px;
     width: 45px;
     height: 45px;
@@ -245,7 +240,7 @@ footer a:nth-of-type(5) i {
     transition: .2s;
 }
 
-footer a:nth-of-type(5):hover i {
+footer a:nth-of-type(4):hover i {
     background-color: white;
     color: #323131;
     font-size: 30px;
