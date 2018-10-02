@@ -9,7 +9,8 @@ font-family: 'Josefin Sans', sans-serif; */
 }
 
 :root {
-    --buttonColor: #ff3819;
+    --buttonColor: #ff7148;
+    --sectionColor: #eaeff1;
 }
 
 body {
@@ -24,7 +25,7 @@ header {
 
 nav {
     max-width: 1920px;
-    background-color: rgba(190, 190, 190, 0.9);
+    background-color: rgba(147, 177, 198, 0.9);
     position: fixed;
     top: 0;
     left: 50%;
@@ -37,7 +38,7 @@ nav {
 /* Przezroczysty nav */
 nav.scrolled {
     height: 80px;
-    background-color: rgba(190, 190, 190, 0.7);
+    background-color: rgba(147, 177, 198, 0.7);
     transition: .2s linear;
 }
 
@@ -70,7 +71,7 @@ nav ul li::before {
     content: '';
     display: block;
     height: 6px;
-    background-color: #ff3819;
+    background-color: var(--buttonColor);
     position: absolute;
     top: 54px;
     left: 0;
@@ -136,7 +137,7 @@ nav ul li img.changeSize {
     height: 300px;
     padding: 30px;
     border-radius: 20px;
-    background-color: rgba(190, 190, 190, 0.6);
+    background-color: rgba(147, 177, 198, 0.6);
     z-index: 1;
 }
 
@@ -168,8 +169,8 @@ nav ul li img.changeSize {
 
 .banner .info a:hover {
     background-color: rgb(190, 190, 190);
-    box-shadow: 0 0 0 2px #ff3819;
-    color: #ff3819;
+    box-shadow: 0 0 0 2px #ec583a;
+    color: #ec583a;
 }
 
 /* Header banner img */
@@ -225,13 +226,13 @@ nav ul li img.changeSize {
     max-width: 1920px;
     padding: 0 0 5px 0;
     margin: 0 auto;
-    background-color: #eee;
+    background-color: var(--sectionColor);
 }
 
 .gallery1 .description {
     padding: 40px 0;
     text-align: center;
-    background-color: #eee;
+    background-color: var(--sectionColor);
 }
 
 .gallery1 .description h2 {
@@ -251,8 +252,8 @@ nav ul li img.changeSize {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1920px;
-    padding: 0 0 40px 0;
-    background-color: #eee;
+    padding: 0 0 20px 0;
+    background-color: var(--sectionColor);
 }
 
 .dogs div {
@@ -262,7 +263,7 @@ nav ul li img.changeSize {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     margin: 20px;
     overflow: hidden;
 }
@@ -284,7 +285,7 @@ nav ul li img.changeSize {
     font-size: 30px;
     font-weight: bold;
     background-color: rgba(190, 190, 190, 0.6);
-    border-radius: 10px;
+    /* border-radius: 10px; */
     font-family: 'Roboto', sans-serif;
     opacity: 0;
     cursor: default;
@@ -303,13 +304,13 @@ nav ul li img.changeSize {
     max-width: 1920px;
     padding: 0 0 5px 0;
     margin: 0 auto;
-    background-color: white;
+    background-color: #f5f5f5;
 }
 
 .gallery2 .description {
     padding: 40px 0;
     text-align: center;
-    background-color: white;
+    background-color: #f5f5f5;
 }
 
 .gallery2 .description h2 {
@@ -328,9 +329,9 @@ nav ul li img.changeSize {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1920px;
-    padding: 0 0 40px 0;
+    padding: 0 0 20px 0;
     /* margin: 50px auto 0; */
-    background-color: white;
+    background-color: #f5f5f5;
 }
 
 .cats div {
@@ -340,7 +341,7 @@ nav ul li img.changeSize {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     margin: 20px;
     overflow: hidden;
 }
@@ -363,7 +364,7 @@ nav ul li img.changeSize {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     background-color: rgba(190, 190, 190, 0.6);
-    border-radius: 10px;
+    /* border-radius: 10px; */
     opacity: 0;
     cursor: default;
     transform: translateY(-100%);
@@ -380,8 +381,8 @@ nav ul li img.changeSize {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    padding: 40px 0;
-    background-color: #eee;
+    padding: 40px 40px;
+    background-color: var(--sectionColor);
 }
 
 .card-body {
@@ -421,7 +422,7 @@ footer {
     margin: 0 auto !important;
     position: relative;
     height: 10vh;
-    background-color: rgb(190, 190, 190);
+    background-color: #93b1c6;
     text-align: center;
 }
 
