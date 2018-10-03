@@ -84,7 +84,7 @@ nav ul li a {
     color: black !important;
     text-decoration: none !important;
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
+    font-family: arial, sans-serif;
     font-weight: bold;
     transition: .2s linear;
 }

@@ -1,5 +1,8 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
 #header_form {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Oswald', sans-serif;
     font-size: 35px;
 }
 
@@ -14,12 +17,12 @@ body {
 }
 
 .form-check {
-    font-family: 'Rokkitt', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 21px;
 }
 
 .criterion {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     width: 300px;
 
@@ -35,10 +38,6 @@ body {
     color: whitesmoke;
     box-shadow: 5px 5px 10px whitesmoke;
 } */
-
-.option:hover {
-    border-bottom: 2px solid rgb(255, 56, 25);
-}
 
 i {
     color: rgb(255, 56, 25);
@@ -239,6 +238,7 @@ footer a:nth-of-type(3):hover i {
 
 #form_header {
     font-size: 40px;
+    font-family: 'Oswald', sans-serif;
     display: inline-block;
     text-align: center;
     width: 90%;
@@ -246,6 +246,7 @@ footer a:nth-of-type(3):hover i {
 }
 
 #form_description {
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     display: inline-block;
     width: 90%;

@@ -1,3 +1,6 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +26,7 @@ nav {
 }
 
 nav ul {
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -69,6 +72,7 @@ nav ul li a {
     color: black !important;
     text-decoration: none !important;
     text-transform: uppercase;
+    font-family: arial, sans-serif;
     font-weight: bold;
     transition: .2s linear;
 }
@@ -95,17 +99,20 @@ section.article {
 .first h2 {
     font-size: 40px;
     color: #fc4a1a;
+    font-family: 'Oswald', sans-serif;
 }
 
 .second h2 {
     font-size: 40px;
     color: #fc4a1a;
+    font-family: 'Oswald', sans-serif;
 }
 
 .article p {
     text-align: justify;
     margin: 40px 114px;
-    font-size: 26px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* FOOTER */
@@ -122,6 +129,7 @@ footer p {
     font-size: 15px;
     color: black;
     line-height: 8vh;
+    font-family: arial;
 }
 
 /* Footer fb */
