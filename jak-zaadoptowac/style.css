@@ -13,26 +13,17 @@ body {
 /* NAV */
 nav {
     max-width: 1920px;
-    margin: 0 auto;
-    background-color: rgba(190, 190, 190, 0.9);
-    position: fixed;
+    background-color: #93b1c6;
+    position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    height: 160px;
+    height: 80px;
     z-index: 2;
 }
 
-/* Przezroczysty nav */
-nav.scrolled {
-    height: 80px;
-    background-color: rgba(190, 190, 190, 0.7);
-    transition: .2s linear;
-}
-
 nav ul {
-    position: relative;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -40,12 +31,11 @@ nav ul {
 }
 
 nav ul li {
-    position: relative;
     flex-basis: 16%;
     text-align: center;
     cursor: pointer;
-    line-height: 160px;
-    font-size: 35px;
+    line-height: 80px;
+    font-size: 25px;
 }
 
 nav ul li:nth-child(3) {
@@ -60,7 +50,7 @@ nav ul li::before {
     content: '';
     display: block;
     height: 6px;
-    background-color: rgb(255, 56, 25);
+    background-color: #fc4a1a;
     position: absolute;
     top: 54px;
     left: 0;
@@ -78,14 +68,8 @@ nav ul li a {
     color: black !important;
     text-decoration: none !important;
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     transition: .2s linear;
-}
-
-nav ul li.lineHeight {
-    line-height: 80px;
-    font-size: 25px;
 }
 
 nav ul li img {
@@ -93,14 +77,9 @@ nav ul li img {
     top: 50%;
     left: 50%;
     transform: translate(-45%, -50%);
-    width: 160px;
-    height: 160px;
-    transition: .2s linear;
-}
-
-nav ul li img.changeSize {
     width: 80px;
     height: 80px;
+    transition: .2s linear;
 }
 
 /*Article*/
@@ -109,20 +88,18 @@ section.article {
     text-align: center;
     max-width: 1920px;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 140px;
 }
 
 h2 {
     font-size: 40px;
-    font-family: 'Josefin Sans', sans-serif;
-    color: rgb(255, 56, 25);
+    color: #fc4a1a;
 }
 
 .article p {
     text-align: justify;
-    margin: 40px 114px;
+    margin: 40px 110px;
     font-size: 26px;
-    font-family: 'Roboto', sans-serif;
 }
 
 /* FOOTER */
@@ -130,16 +107,15 @@ footer {
     max-width: 1920px;
     margin: 0 auto;
     position: relative;
-    height: 10vh;
-    background-color: rgb(190, 190, 190);
+    height: 8vh;
+    background-color: #93b1c6;
     text-align: center;
 }
 
 footer p {
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
     color: black;
-    line-height: 10vh;
+    line-height: 8vh;
 }
 
 /* Footer fb */
@@ -147,7 +123,7 @@ footer a:nth-of-type(1) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 260px;
+    right: 210px;
     border-radius: 50%;
 
 }
@@ -174,7 +150,7 @@ footer a:nth-of-type(2) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 190px;
+    right: 140px;
     border-radius: 50%;
 }
 
@@ -199,7 +175,7 @@ footer a:nth-of-type(3) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 120px;
+    right: 70px;
     border-radius: 50%;
 }
 
@@ -217,31 +193,5 @@ footer a:nth-of-type(3) i {
 footer a:nth-of-type(3):hover i {
     background-color: white;
     color: #28AAE1;
-    font-size: 30px;
-}
-
-/* Footer github */
-footer a:nth-of-type(4) {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 50px;
-    border-radius: 50%;
-}
-
-footer a:nth-of-type(4) i {
-    font-size: 25px;
-    width: 45px;
-    height: 45px;
-    background-color: #323131;
-    color: white;
-    line-height: 45px;
-    border-radius: 50%;
-    transition: .2s;
-}
-
-footer a:nth-of-type(4):hover i {
-    background-color: white;
-    color: #323131;
     font-size: 30px;
 }
