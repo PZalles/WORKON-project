@@ -88,12 +88,16 @@ nav ul li img {
 }
 
 /*Article*/
+body {
+    background-color: #eaeff1;
+}
 
 section.article {
     text-align: center;
     max-width: 1920px;
     margin: 0 auto;
     margin-top: 120px;
+    background-color: #eaeff1;
 }
 
 .first h2 {
