@@ -63,6 +63,11 @@ nav ul li::before {
     transition: transform ease-in-out .3s;
 }
 
+nav ul li:nth-child(2)::before {
+    transform: scale(1, 1);
+}
+
+
 nav ul li:hover::before {
     transform: scale(1, 1);
 }
@@ -72,9 +77,14 @@ nav ul li a {
     color: black !important;
     text-decoration: none !important;
     text-transform: uppercase;
-    font-family: arial, sans-serif;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
     font-weight: bold;
     transition: .2s linear;
+}
+
+nav ul li:nth-child(2) a {
+    color: #fc4a1a !important;
 }
 
 nav ul li img {

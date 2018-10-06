@@ -75,6 +75,10 @@ nav ul li::before {
     transition: transform ease-in-out .3s;
 }
 
+nav ul li:nth-child(5)::before {
+    transform: scale(1, 1);
+}
+
 nav ul li:hover::before {
     transform: scale(1, 1);
 }
@@ -84,9 +88,14 @@ nav ul li a {
     color: black !important;
     text-decoration: none !important;
     text-transform: uppercase;
-    font-family: arial, sans-serif;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
     font-weight: bold;
     transition: .2s linear;
+}
+
+nav ul li:nth-child(5) a {
+    color: #fc4a1a !important;
 }
 
 nav ul li.lineHeight {
@@ -120,6 +129,7 @@ nav ul li img.changeSize {
     text-align: justify;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
 }
 
 body {
@@ -191,6 +201,7 @@ body {
 
 h1 {
     font-family: 'Oswald', sans-serif;
+    color: #fc4a1a;
 }
 
 h2,
@@ -199,12 +210,14 @@ h4 {
     margin-top: 10px;
     font-size: 30px;
     font-family: 'Oswald', sans-serif;
+    color: #fc4a1a;
 }
 
 h3 {
     margin-bottom: 25px;
     font-size: 30px;
     font-family: 'Oswald', sans-serif;
+    color: #fc4a1a;
 }
 
 h5 {
