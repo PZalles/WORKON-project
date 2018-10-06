@@ -240,12 +240,14 @@ nav ul li img.changeSize {
     font-size: 50px;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
+
 }
 
 .gallery1 .description p {
     padding: 20px 120px 0 120px;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
+    text-align: left;
 }
 
 
@@ -322,6 +324,7 @@ nav ul li img.changeSize {
     padding: 20px 120px 0 120px;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
+    text-align: left;
 }
 
 .cats {
@@ -395,9 +398,10 @@ nav ul li img.changeSize {
 }
 
 .bootstrap .description p {
-    padding: 20px 120px 0 120px;
+    padding: 20px 55px 0 55px;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
+    text-align: left;
 }
 
 .card-deck {
@@ -410,6 +414,7 @@ nav ul li img.changeSize {
 
 .card-body {
     text-align: center;
+    position: relative;
 }
 
 .card-title {
@@ -420,9 +425,14 @@ nav ul li img.changeSize {
 .card-text {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
+    text-align: left;
+    padding-bottom: 50px;
 }
 
 a.btn {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     width: 200px;
