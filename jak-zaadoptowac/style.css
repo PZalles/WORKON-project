@@ -72,7 +72,8 @@ nav ul li a {
     color: black !important;
     text-decoration: none !important;
     text-transform: uppercase;
-    font-family: Arial, sans-serif;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
     font-weight: bold;
     transition: .2s linear;
 }
