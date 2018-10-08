@@ -1,3 +1,5 @@
+/* ZAWSZE TO WKLEJAJCIE NA POCZATKU STYLOW */
+
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Oswald', sans-serif; */
 
@@ -13,20 +15,30 @@ body {
 }
 
 /* NAV */
+
 nav {
     max-width: 1920px;
-    background-color: #93b1c6;
-    position: absolute;
+    margin: 0 auto;
+    background-color: rgba(147, 177, 198, 0.9);
+    position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    height: 80px;
+    height: 160px;
     z-index: 2;
 }
 
+/* Przezroczysty nav */
+
+nav.scrolled {
+    height: 80px;
+    background-color: rgba(147, 177, 198, 0.7);
+    transition: .2s linear;
+}
+
 nav ul {
-    /* position: relative; */
+    position: relative;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -38,8 +50,8 @@ nav ul li {
     flex-basis: 16%;
     text-align: center;
     cursor: pointer;
-    line-height: 80px;
-    font-size: 25px;
+    line-height: 160px;
+    font-size: 35px;
 }
 
 nav ul li:nth-child(3) {
@@ -63,6 +75,10 @@ nav ul li::before {
     transition: transform ease-in-out .3s;
 }
 
+nav ul li:nth-child(5)::before {
+    transform: scale(1, 1);
+}
+
 nav ul li:hover::before {
     transform: scale(1, 1);
 }
@@ -72,10 +88,19 @@ nav ul li a {
     color: black !important;
     text-decoration: none !important;
     text-transform: uppercase;
+    font-weight: bold;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 5px;
-    font-weight: bold;
     transition: .2s linear;
+}
+
+nav ul li:nth-child(5) a {
+    color: #fc4a1a !important;
+}
+
+nav ul li.lineHeight {
+    line-height: 80px;
+    font-size: 25px;
 }
 
 nav ul li img {
@@ -83,42 +108,145 @@ nav ul li img {
     top: 50%;
     left: 50%;
     transform: translate(-45%, -50%);
-    width: 80px;
-    height: 80px;
+    width: 160px;
+    height: 160px;
     transition: .2s linear;
 }
 
-/*Article*/
-body {
-    background-color: #eaeff1;
+nav ul li img.changeSize {
+    width: 80px;
+    height: 80px;
 }
 
-section.article {
-    text-align: center;
+/* PAGE - wypelnienie strony, zeby rozdzielic nav od footera - tutaj dajecie swoje rzeczy */
+.page {
     max-width: 1920px;
     margin: 0 auto;
-    margin-top: 140px;
-    /* padding-top: 100px; */
-    background-color: #eaeff1;
 }
 
-h2 {
-    font-size: 40px;
+.page p {
+    margin: 20px 10px 20px 10px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    font-family: arial;
+    font-size: 20px;
+    background: #eaeff1;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+
+/* Left column */
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+    padding-left: 20px;
+}
+
+/* Right column */
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding: 0 25px 20px 25px;
+}
+
+/* Image */
+
+.img {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.row {
+    margin-top: 170px;
+    margin-bottom: 30px;
+}
+
+h1 {
     font-family: 'Oswald', sans-serif;
     color: #fc4a1a;
 }
 
-.article p {
-    text-align: justify;
-    margin: 40px 110px;
-    font-size: 25px;
-    font-family: 'Roboto', sans-serif
+h2 {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    color: #fc4a1a;
+    /* text-align: center; */
 }
 
+h3 {
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    color: #fc4a1a;
+}
+
+h5 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.rightcolumn p {
+    margin: 10px;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+a:hover {
+    color: #fc4a1a;
+}
+
+
 /* FOOTER */
+
 footer {
     max-width: 1920px;
-    margin: 0 auto;
+    margin: 0 auto !important;
     position: relative;
     height: 8vh;
     background-color: #93b1c6;
@@ -127,12 +255,14 @@ footer {
 
 footer p {
     font-size: 15px;
-    font-family: arial;
     color: black;
     line-height: 8vh;
+    font-family: arial;
+    margin: 0;
 }
 
 /* Footer fb */
+
 footer a:nth-of-type(1) {
     position: absolute;
     top: 50%;
@@ -160,6 +290,7 @@ footer a:nth-of-type(1):hover i {
 }
 
 /* Footer instagram */
+
 footer a:nth-of-type(2) {
     position: absolute;
     top: 50%;
@@ -185,6 +316,7 @@ footer a:nth-of-type(2):hover i {
 }
 
 /* Footer twitter */
+
 footer a:nth-of-type(3) {
     position: absolute;
     top: 50%;

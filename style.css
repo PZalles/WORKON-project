@@ -135,7 +135,7 @@ nav ul li img.changeSize {
     transform: translateY(-50%);
     right: 10%;
     width: 500px;
-    height: 300px;
+    height: 250px;
     padding: 30px;
     border-radius: 20px;
     background-color: rgba(147, 177, 198, 0.5);
@@ -244,7 +244,7 @@ nav ul li img.changeSize {
 }
 
 .gallery1 .description p {
-    padding: 20px 120px 0 120px;
+    padding: 20px 50px 0 50px;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     text-align: left;
@@ -262,12 +262,12 @@ nav ul li img.changeSize {
 
 .dogs div {
     position: relative;
-    width: 400px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 15px;
     overflow: hidden;
 }
 
@@ -285,7 +285,7 @@ nav ul li img.changeSize {
     position: absolute;
     color: black;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
     background-color: rgba(147, 177, 198, 0.5);
     opacity: 0;
@@ -321,7 +321,7 @@ nav ul li img.changeSize {
 }
 
 .gallery2 .description p {
-    padding: 20px 120px 0 120px;
+    padding: 20px 50px 0 50px;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     text-align: left;
@@ -339,12 +339,12 @@ nav ul li img.changeSize {
 
 .cats div {
     position: relative;
-    width: 400px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 15px;
     overflow: hidden;
 }
 
@@ -362,7 +362,7 @@ nav ul li img.changeSize {
     position: absolute;
     color: black;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
     background-color: rgba(147, 177, 198, 0.5);
     opacity: 0;
@@ -398,7 +398,7 @@ nav ul li img.changeSize {
 }
 
 .bootstrap .description p {
-    padding: 20px 55px 0 55px;
+    padding: 20px 50px 0 50px;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     text-align: left;
@@ -408,7 +408,7 @@ nav ul li img.changeSize {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    padding: 20px 40px;
+    padding: 20px 50px;
     background-color: var(--sectionColor);
 }
 
