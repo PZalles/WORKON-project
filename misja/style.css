@@ -130,20 +130,20 @@ section.article {
 }
 
 .first h2 {
-    font-size: 40px;
+    font-size: 30px;
     color: #fc4a1a;
     font-family: 'Oswald', sans-serif;
 }
 
 .second h2 {
-    font-size: 40px;
+    font-size: 30px;
     color: #fc4a1a;
     font-family: 'Oswald', sans-serif;
 }
 
 .article p {
     text-align: justify;
-    margin: 20px 300px;
+    margin: 20px 110px;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
