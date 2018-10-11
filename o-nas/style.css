@@ -144,6 +144,11 @@ nav ul li img {
     font-family: 'Roboto', sans-serif;
 }
 
+.team h3 {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
 @media (orientation: landscape) {
     .team img.color {
         right: 10%;
